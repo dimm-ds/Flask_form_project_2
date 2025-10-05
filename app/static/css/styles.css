@@ -106,5 +106,8 @@ button {
     height: 30px;
     border-radius: 5px;
     border: 0;
+}
 
+.send-message {
+    color: rgb(17, 245, 17);
 }

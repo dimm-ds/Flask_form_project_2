@@ -4,6 +4,9 @@
 
 {% block content %}
     <h1>Contact Us</h1>
+    {% if submitted %}
+    <p class="send-message">Your message has been sent succcessfully!</p>
+    {% endif %}
     <div class="conteiner">
         <form action="/submit" method="post" class="form-contacts">
             <label for="name">Your Name:</label>
