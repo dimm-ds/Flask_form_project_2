@@ -1,4 +1,4 @@
 from app import app
 
-if __name__ == '__main__':
-    app.run(debag=True)
+if __name__ == "__main__":
+    app.run(debug=True)
