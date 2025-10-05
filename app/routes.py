@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request
 from app import app
 
 @app.route("/")
@@ -13,10 +13,10 @@ def about():
 def contact():
     return render_template("contact.html")
 
-@app.route("/submit", methods="POST")
+@app.route("/submit", methods=["POST"])
 def submit():
-        name = request.form.get("name")
-        email = request.form.get("email")
-        message = request.form.get("message")
+    name = request.form.get("name")
+    email = request.form.get("email")
+    message = request.form.get("message")
 
-
+    return render_template("contact.html", submitted=True)
