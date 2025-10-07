@@ -12,4 +12,10 @@
             <li>Values: Collaboration, innovation, and learning.</li>
         </ul>
     </div>
+    <h3>Our team</h3>
+    <div class="team_members">
+        {% for member in team_members %}
+            <p>{{member.name}} - {{member.role}}</p>
+        {% endfor %}     
+    </div>
 {% endblock %}

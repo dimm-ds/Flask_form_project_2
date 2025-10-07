@@ -13,7 +13,7 @@ h2 {
     text-align: center;
 }
 
-p {
+p, h3 {
     text-align: center;
 }
 
@@ -110,4 +110,28 @@ button {
 
 .send-message {
     color: rgb(17, 245, 17);
+}
+
+.current {
+    background-color: rgb(137, 140, 143);
+    margin-top: -40px;
+    position: absolute;
+    padding: 0 10px;
+}
+
+.team_members {
+
+}
+
+.team_members p {
+    margin: 0;
+}
+
+.info {
+    width: 500px;
+    margin: auto;
+}
+
+h4 {
+    margin: 0;
 }
